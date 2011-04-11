@@ -1,42 +1,44 @@
 body {
-  background-color: #111111;
-  color: white;
-  font-family: "Avenir LT Std", Avenir, "Helvetica Neue", Helvetica, sans-serif, Arial;
+  background-color: #fdf9f3;
+  background-image: url("../images/wheat.png");
+  color: black;
+  font-family: Baskerville, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman";
   font-size: 1.2em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #b1dd8f;
+  color: #776500;
   font-weight: 900; }
 
-code {
-  font-family: Inconsolata, Menlo, "Droid Sans Mono", Consolas, "Bitstream Vera Sans Mono", "Lucida Sans Typewriter", "Lucida Console", mono, Courier, "Courier New";
-  background-color: #335419;
-  padding: 0 4px; }
-
-table thead tr {
-  background-color: #b1dd8f;
-  color: #111111; }
-  table thead tr th {
-    padding-top: 4px;
-    font-weight: 100; }
-table tbody td {
-  padding: 2px 4px; }
-  table tbody td.in, table tbody td.out {
-    font-family: Inconsolata, Menlo, "Droid Sans Mono", Consolas, "Bitstream Vera Sans Mono", "Lucida Sans Typewriter", "Lucida Console", mono, Courier, "Courier New"; }
-  table tbody td.gigantic {
-    font-size: 4em; }
-
 a:link, a:visited {
-  color: #b1dd8f; }
+  color: #776500;
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 div.gutter {
   width: 800px;
   margin: 0px auto;
   padding: 10px; }
-  div.gutter div.welcome {
-    background-color: #222222;
+  div.gutter div.welcome, div.gutter div.closing {
+    background-color: #777360;
+    color: #fcf5f1;
     padding: 10px;
-    margin: -10px; }
+    margin: -10px;
+    box-shadow: 0px 2px 15px black; }
+    div.gutter div.welcome h1:first-child, div.gutter div.closing h1:first-child {
+      margin-top: 0.5em; }
+    div.gutter div.welcome h1, div.gutter div.welcome h2, div.gutter div.welcome h3, div.gutter div.welcome h4, div.gutter div.welcome h5, div.gutter div.welcome h6, div.gutter div.closing h1, div.gutter div.closing h2, div.gutter div.closing h3, div.gutter div.closing h4, div.gutter div.closing h5, div.gutter div.closing h6 {
+      color: white; }
+    div.gutter div.welcome a:link, div.gutter div.welcome a:visited, div.gutter div.closing a:link, div.gutter div.closing a:visited {
+      color: white;
+      background-color: #5b5849;
+      padding-left: 0.2em;
+      padding-right: 0.2em; }
+  div.gutter div.welcome {
+    margin-top: 0.5em; }
+  div.gutter div.closing {
+    margin-top: 1em;
+    margin-bottom: 0.5em; }
+  div.gutter div.restaurant-info h1:first-child {
+    margin-top: 1em; }
