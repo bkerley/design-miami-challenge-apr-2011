@@ -19,12 +19,14 @@ namespace :output do
     end
   end
 
+  desc 'Push the generated site to its remote.'
   task :push => :commit do
     Dir.chdir 'output' do
       sh 'git push'
     end
   end
 
+  desc 'Commit the generated site to its branch.'
   task :commit=>'generate:all' do
     Dir.chdir 'output' do
       sh 'git add -A'
