@@ -1,84 +1,52 @@
 !!! 5
 %head
-  %title Welcome to Charleston
+  %title Design Miami Challenge
   %link(rel='stylesheet' type='text/css' href='stylesheets/screen.css')
 %body
   .gutter
     .welcome
-      %h1 Welcome to Charleston
+      %h1 Design Miami Challenge
+      %h2 (codename: FUN DMC)
       :markdown
-        Charleston is a framework to build static HTML/CSS/JavaScript sites with
-        any combination of HTML, HAML, CSS, SASS, JavaScript, and CoffeeScript,
-        that's easy to put together and maintain.
-    %h2 Let's get started!
+        The Design Miami Challenge for April 2011 is to design and build a
+        website for a fictional Canadian-cuisine restaurant here in Coconut
+        Grove. We will provide you with the menu, hours, and address, and you
+        get to design and build the site. At the May meetup, you'll present
+        your idea, we'll all vote on a winner, and you'll win a prize of my
+        choosing.
+
+        For mid-competition updates, follow [FUN DMC on Twitter](https://twitter.com/fun_dmc).
+    %h1 Restaurant Information
     :markdown
-      1. I'm assuming you've run `charleston my_project` and are now looking
-         at a sample page.
-      2. Edit `pages/index.haml`, and create new HTML or HAML files in the `pages`
-         directory to make new pages.
-      2. Edit `stylesheets/screen.sass`, and create new CSS or SASS files in
-         the `stylesheets` directory to make new stylesheets.
-      3. Edit and create JavaScript or CoffeeScript files in the `javascripts`
-         directory to make new script files.
-      4. Add images to the `images` directory if you want.
-      3. When you want to build the site, run `rake` and it will be created
-         in the `output` directory.
-    %h2 Where to Put Files
-    %table#where_to_put
-      %thead
-        %tr
-          %th Class
-          %th Format
-          %th Inputs
-          %th Outputs
-      %tbody
-        %tr
-          %td Page
-          %td HTML
-          %td.in pages/*.html
-          %td.out output/*.html
-        %tr
-          %td Page
-          %td HAML
-          %td.in pages/*.haml
-          %td.out output/*.html
-        %tr
-          %td Stylesheet
-          %td CSS
-          %td.in stylesheets/*.css
-          %td.out output/stylesheets/*.css
-        %tr
-          %td Stylesheet
-          %td SASS
-          %td.in stylesheets/*.sass
-          %td.out output/stylesheets/*.css
-        %tr
-          %td Script
-          %td JavaScript
-          %td.in javascripts/*.js
-          %td.out output/javascripts/*.js
-        %tr
-          %td Script
-          %td CoffeeScript
-          %td.in javascripts/*.coffee
-          %td.out output/javascripts/*.js
-        %tr
-          %td Image
-          %td Any format
-          %td.in images/*
-          %td.out output/images/*
+      "The Grand Canadian Cafe" is a new bistro in Coconut Grove featuring
+      a selection of Canadian/American fusion cuisine celebrating the
+      culture, heritage, and spirit of America's neighbor to the North.
+
+      The restaurant is located at 2975 Oak Ave, Miami Florida, 33133
+      (this is actually Fire Station #8), is open for breakfast, lunch, and
+      dinner; and has a bar open until midnight. While many people think of
+      the big eastern metropolis of Toronto when they think "Canada,"
+      also think of Calgary, home of the largest rodeo in the world;
+      Banff, a resort town in the Rocky Mountains; and Vancouver, Canada's
+      gateway to Asia.  You might also think about Saskatchewan, which grows
+      much of Canada's food; and the Northwest Territories, home of the
+      TV series "Ice Road Truckers."
+
+    %h1 Menu
+    :markdown
+      ## Breakfast
+
+      * The Vancouver: a whole-Saskatchwean-wheat bagel with Canadian cream
+        cheese, fresh chives, and smoked Salmon from British Columbia.
+      * The Calgary: a whole-Saskatchewan-wheat bagel with beef sausage,
+        bacon, and eggs.
+      * The Saskatoon: Belgian waffles with Saskatoon berry syrup.
+      * The Lumberjack: Five pancakes with hearty Canadian maple syrup.
+
+      ## Sandwiches
+      All sandwiches are available on white, whole-wheat, or rye bread from
+      Saskatchewan wheat.
     %h2 What Not To Do
     :markdown
       * Don't make any direct edits to the "output" directory. These files
       get clobbered when you update the source files.
-    %h2 More information
-    :markdown
-      Source code is available and forkable on the
-      [Charleston Github repository](http://github.com/bkerley/charleston).
-      Thanks in advance for your contributions and well-tested patches.
-      
-      Charleston is Copyright &copy; 2010 by Bryce Kerley. Please see the
-      license included with this software, or in the [Charleston Github
-      repository](http://github.com/bkerley/charleston/blob/master/LICENSE).
-  %script(type='text/javascript' src='http://prototypejs.org/assets/2010/5/13/prototype.js')
-  %script(type='text/javascript' src='javascripts/example.js')
