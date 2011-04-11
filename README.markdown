@@ -15,7 +15,10 @@ account.
 
 For other stuff, send email to [Bryce](mailto:brycek+fundmc@gmail.com).
 
-## License
+## Colophon and Legal
+
+This site uses 100% valid HTML, CSS, and even has a print stylesheet.
+It uses the [Charleston static site toolkit](https://github.com/bkerley/charleston/).
 
 This project is copyright 2011 by Bryce Kerley, but licensed under the
 Creative Commons Zero license so you can do whatever you want with it.
