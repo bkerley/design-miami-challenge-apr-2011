@@ -1,24 +1,24 @@
-$accent_color: #b1dd8f
-$welcome_color: #222
-$background_color: #111
-$foreground_color: white
+$accent_color: #776500
+$welcome_color: #777360
+$welcome_fg_color: #FCF5F1
+$welcome_accent_color: white
+$welcome_link_color: $welcome_accent_color
+$welcome_link_bg_color: darken($welcome_color, 10%)
+$background_color: #FDF9F3
+$foreground_color: black
 $dark_accent_color: darken($accent_color, 50%)
 
-$body_font: "Avenir LT Std", Avenir, "Helvetica Neue", Helvetica, sans-serif, Arial
-$code_font: Inconsolata, Menlo, "Droid Sans Mono", Consolas, "Bitstream Vera Sans Mono", "Lucida Sans Typewriter", "Lucida Console", mono, Courier, "Courier New"
+$body_font: Baskerville, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman"
 
 body
   background-color: $background_color
+  background-image: url('../images/wheat.png')
   color: $foreground_color
   font-family: $body_font
   font-size: 1.2em
 h1, h2, h3, h4, h5, h6
   color: $accent_color
   font-weight: 900
-code
-  font-family: $code_font
-  background-color: $dark_accent_color
-  padding: 0 4px
 
 a:link, a:visited
   color: $accent_color
@@ -32,5 +32,13 @@ div.gutter
   padding: 10px
   div.welcome, div.closing
     background-color: $welcome_color
+    color: $welcome_fg_color
     padding: 10px
     margin: -10px
+    h1, h2, h3, h4, h5, h6
+      color: $welcome_accent_color
+    a:link, a:visited
+      color: $welcome_link_color
+      background-color: $welcome_link_bg_color
+      padding-left: 0.2em
+      padding-right: 0.2em
