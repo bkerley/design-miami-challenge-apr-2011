@@ -1,3 +1,7 @@
+/*
+ * Copyright 2011 by Bryce Kerley
+ * Licensed under the Creative Commons Zero license
+ */
 $accent_color: #776500
 $welcome_color: #777360
 $welcome_fg_color: #FCF5F1
@@ -8,7 +12,10 @@ $background_color: #FDF9F3
 $foreground_color: black
 $dark_accent_color: darken($accent_color, 50%)
 
-$body_font: Baskerville, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman"
+$link_padding: 0.2em
+
+$head_font: "Adobe Calson Pro", Calson, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman"
+$body_font: $head_font
 
 body
   background-color: $background_color
@@ -17,14 +24,16 @@ body
   font-family: $body_font
   font-size: 1.2em
 h1, h2, h3, h4, h5, h6
+  font-family: $head_font
   color: $accent_color
   font-weight: 900
 
 a:link, a:visited
   color: $accent_color
   background-color: white  
-  padding-left: 0.2em
-  padding-right: 0.2em
+  padding: $link_padding
+  margin-bottom: -$link_padding
+  margin-top: -$link_padding
   text-decoration: none
 a:hover
   text-decoration: underline
@@ -46,6 +55,9 @@ div.gutter
     a:link, a:visited
       color: $welcome_link_color
       background-color: $welcome_link_bg_color
+    a:hover
+      background-color: black
+      text-decoration: none
   div.welcome
     margin-top: 0.5em
   div.closing
