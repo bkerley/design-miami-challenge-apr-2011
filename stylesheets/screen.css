@@ -54,5 +54,9 @@ div.gutter {
     margin-bottom: 0.5em; }
     div.gutter div.closing div.legal {
       font-size: 0.8em; }
+      div.gutter div.closing div.legal #license_title:before {
+        content: '"'; }
+      div.gutter div.closing div.legal #license_title:after {
+        content: '"'; }
   div.gutter div.restaurant-info h1:first-child {
     margin-top: 1em; }
