@@ -1,16 +1,27 @@
+/* Copyright 2011 by Bryce Kerley
+ * Licensed under the Creative Commons Zero license
+ */
 body {
   background-color: #fdf9f3;
-  background-image: url("../images/wheat.png");
+  background-image: url("../images/wheat.jpg");
   color: black;
-  font-family: Baskerville, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman";
+  font-family: "Adobe Calson Pro", Calson, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman";
   font-size: 1.2em; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Adobe Calson Pro", Calson, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman";
   color: #776500;
   font-weight: 900; }
 
+p {
+  font-size: 1.2em; }
+
 a:link, a:visited {
   color: #776500;
+  background-color: white;
+  padding: 0.2em;
+  margin-bottom: -0.2em;
+  margin-top: -0.2em;
   text-decoration: none; }
 
 a:hover {
@@ -32,13 +43,16 @@ div.gutter {
       color: white; }
     div.gutter div.welcome a:link, div.gutter div.welcome a:visited, div.gutter div.closing a:link, div.gutter div.closing a:visited {
       color: white;
-      background-color: #5b5849;
-      padding-left: 0.2em;
-      padding-right: 0.2em; }
+      background-color: #5b5849; }
+    div.gutter div.welcome a:hover, div.gutter div.closing a:hover {
+      background-color: black;
+      text-decoration: none; }
   div.gutter div.welcome {
     margin-top: 0.5em; }
   div.gutter div.closing {
     margin-top: 1em;
     margin-bottom: 0.5em; }
+    div.gutter div.closing div.legal {
+      font-size: 0.8em; }
   div.gutter div.restaurant-info h1:first-child {
     margin-top: 1em; }

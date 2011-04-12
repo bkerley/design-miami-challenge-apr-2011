@@ -1,0 +1,30 @@
+/* Copyright 2011 by Bryce Kerley
+ * Licensed under the Creative Commons Zero license
+ */
+body {
+  color: black;
+  background-color: white;
+  font-family: "Adobe Calson Pro", Calson, "Adobe Garamond Pro", Garamond, Georgia, "Droid Serif", serif, "Times New Roman";
+  margin: 2.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: black; }
+
+p {
+  font-size: 1.4em; }
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black; }
+  a:link:after, a:visited:after {
+    font-size: 0.5em;
+    vertical-align: super;
+    content: " (link)"; }
+
+div.welcome {
+  border-bottom: 0.1em solid black; }
+
+div.closing {
+  border-top: 0.1em solid black; }
+  div.closing div.legal {
+    font-size: 0.7em; }
