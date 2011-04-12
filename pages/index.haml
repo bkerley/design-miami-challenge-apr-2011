@@ -164,6 +164,28 @@
             This site uses valid HTML, CSS, and even has a print stylesheet.
             It uses the [Charleston static site toolkit](https://github.com/bkerley/charleston/).
 
-            &copy; Copyright 2011 by [Bryce Kerley](http://brycekerley.net),
-            and licensed under the Creative Commons Zero license; that means
-            you can do whatever you want with it.
+          :preserve
+            <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+              &copy; Copyright 2011 by Bryce Kerley, but licensed as
+              <a rel="license"
+                 href="http://creativecommons.org/publicdomain/zero/1.0/">
+                Creative Commons Zero.</a>
+              To the extent possible under law,
+              <span rel="dct:publisher">
+                <span property="dct:title">Bryce Kerley</span></span>
+              has waived all copyright and related or neighboring rights to
+              <a href="http://bkerley.github.com/design-miami-challenge-apr-2011/" id="license_title" property="dct:title">Design Miami Challenge April 2011</a>.
+            This work is published from the
+            <span property="vcard:Country" datatype="dct:ISO3166"
+                  content="US" about="http://bkerley.github.com/design-miami-challenge-apr-2011/">United States</span>.
+            </p>
+          :javascript
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-605807-17']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
